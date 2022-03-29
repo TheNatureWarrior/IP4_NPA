@@ -69,8 +69,8 @@ ON pub.publisherCode = book.publisherCode;
 #              Use aliases in your query. Order the result by title. )
 SELECT title, city
 FROM book
-JOIN publisher AS pub
-ON pub.publisherCode = book.publisherCode
+JOIN publisher AS p
+ON p.publisherCode = book.publisherCode
 ORDER BY title;
 
 #14	Retrieve the title from the book relation and branchNum and onHand from the inventory relation. 
